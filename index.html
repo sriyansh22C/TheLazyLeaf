@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lazy Leaf | Pure Vegetarian Café in Talwandi, Kota</title>
+    <meta name="description" content="The Lazy Leaf is a cozy, modern, pure vegetarian café in Talwandi, Kota offering delicious food, coffee, and a relaxing aesthetic vibe.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container container">
+            <a href="#" class="logo">
+                <img src="lazyleafImages/lazyleaflogo.jpg" alt="The Lazy Leaf Logo" class="logo-img"> The Lazy Leaf
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <a href="#order" class="btn btn-primary btn-sm">Order Online</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Fixed Canvas Background -->
+    <div class="canvas-container">
+        <canvas id="hero-canvas"></canvas>
+        <div class="canvas-overlay"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text-wrapper fade-up">
+                <span class="badge">Pure Vegetarian</span>
+                <h1 class="hero-title">Escape to <br><span class="highlight">The Lazy Leaf</span></h1>
+                <p class="hero-subtitle">A cozy, nature-inspired café offering soulful food, artisan coffee, and a perfect atmosphere for relaxing, studying, or socializing in Talwandi, Kota.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#experience" class="btn btn-secondary glass">View Café</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trust Signals / Highlights -->
+        <div class="trust-signals container glass-panel fade-up">
+            <div class="signal">
+                <i class="fa-solid fa-star text-gold"></i>
+                <div>
+                    <strong>4.5★ Rating</strong>
+                    <span>500+ Local Reviews</span>
+                </div>
+            </div>
+            <div class="signal">
+                <i class="fa-solid fa-location-dot text-green"></i>
+                <div>
+                    <strong>Near Commerce College Rd</strong>
+                    <span>Talwandi, Kota</span>
+                </div>
+            </div>
+            <div class="signal">
+                <i class="fa-solid fa-leaf text-green"></i>
+                <div>
+                    <strong>100% Pure Veg</strong>
+                    <span>Since 2023</span>
+                </div>
+            </div>
+            <div class="signal">
+                <i class="fa-solid fa-wallet text-gold"></i>
+                <div>
+                    <strong>₹200–₹400 / Person</strong>
+                    <span>Value for money</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section (Categorized) -->
+    <section id="menu" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="title">Our Offerings</h2>
+                <p class="subtitle">Comfort food, classic beverages, and chef's specials curated for every craving.</p>
+            </div>
+            
+            <div class="menu-filters fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coffee">Coffee & Beverages</button>
+                <button class="filter-btn" data-filter="shakes">Shakes & Coolers</button>
+                <button class="filter-btn" data-filter="snacks">Snacks</button>
+                <button class="filter-btn" data-filter="italian">Italian Vibes</button>
+                <button class="filter-btn" data-filter="asian">Asian Bowls</button>
+                <button class="filter-btn" data-filter="indian">Indian Classics</button>
+                <button class="filter-btn" data-filter="special">Specials</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee & Beverages -->
+                <div class="menu-category" data-category="coffee">
+                    <h3 class="category-title"><i class="fa-solid fa-mug-hot"></i> Coffee & Café Beverages</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Hot & Iced Coffee</h4>
+                                <p>Espresso, Cappuccino, Americano, Latte</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Specialty Frappes</h4>
+                                <p>Caramel, Hazelnut, Mocha</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Tea & Hot Chocolate</h4>
+                                <p>Classic teas, Masala Chai, Rich Hot Chocolate</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Shakes & Coolers -->
+                <div class="menu-category" data-category="shakes">
+                    <h3 class="category-title"><i class="fa-solid fa-martini-glass"></i> Shakes, Mocktails & Coolers</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Thick Milkshakes</h4>
+                                <p>Oreo, KitKat, Chocolate, Strawberry</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Mojito-Style Mocktails</h4>
+                                <p>Virgin Mojito, Blue Lagoon, Green Apple</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Fruit Coolers & Iced Teas</h4>
+                                <p>Peach, Lemon, Berry Infusions</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Snacks -->
+                <div class="menu-category" data-category="snacks">
+                    <h3 class="category-title"><i class="fa-solid fa-plate-wheat"></i> Café Snacks & Small Plates</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Loaded Fries & Nachos</h4>
+                                <p>Cheesy variations, Mexican salsa</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Garlic Breads & Starters</h4>
+                                <p>Cheese garlic bread, crispy corn</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Steamed & Fried Momos</h4>
+                                <p>Paneer, Veg, Kurkure styled</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Italian -->
+                <div class="menu-category" data-category="italian">
+                    <h3 class="category-title"><i class="fa-solid fa-pizza-slice"></i> Italian & Café Classics</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Artisan Pizzas</h4>
+                                <p>Margherita, Farmhouse, Paneer Tikka</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Pasta Dishes</h4>
+                                <p>Arrabbiata, Alfredo, Mixed Sauce</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Sandwiches & Burgers</h4>
+                                <p>Grilled sandwiches, Veggie burgers</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Asian -->
+                <div class="menu-category" data-category="asian">
+                    <h3 class="category-title"><i class="fa-solid fa-bowl-rice"></i> Asian & Indo-Chinese</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Noodles & Hakka</h4>
+                                <p>Veg Hakka, Chilli Garlic</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Fried Rice Bowls</h4>
+                                <p>Manchurian combos, Schezwan rice</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Indian -->
+                <div class="menu-category" data-category="indian">
+                    <h3 class="category-title"><i class="fa-solid fa-utensils"></i> Indian Classics & Chaat</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>South Indian Comfort</h4>
+                                <p>Dosa varieties, Uttapam, Idli</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Parathas & North Indian</h4>
+                                <p>Aloo, Paneer parathas, Thalis</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Atmosphere Section -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="experience-bg-slider">
+            <div class="slide" style="background-image: url('lazyleafImages/lazyleafcafe1.webp');"></div>
+            <div class="slide" style="background-image: url('lazyleafImages/lazyleafcafe2.webp');"></div>
+            <div class="slide" style="background-image: url('lazyleafImages/lazyleafcafe3.webp');"></div>
+        </div>
+        <div class="experience-content">
+            <div class="container text-center fade-up">
+            <h2 class="title">The Lazy Leaf Experience</h2>
+            <p class="subtitle">More than just food—a place to unwind, work, and connect.</p>
+        </div>
+        
+        <div class="feature-grid container">
+            <div class="feature-card glass-panel fade-up">
+                <div class="icon-wrap"><i class="fa-solid fa-couch"></i></div>
+                <h3>Cozy Indoor Seating</h3>
+                <p>Air-conditioned comfort with decorative, nature-inspired interiors.</p>
+            </div>
+            <div class="feature-card glass-panel fade-up delay-1">
+                <div class="icon-wrap"><i class="fa-solid fa-sun"></i></div>
+                <h3>Rooftop & Terrace</h3>
+                <p>Beautiful outdoor seating for pleasant evenings and starlit dinners.</p>
+            </div>
+            <div class="feature-card glass-panel fade-up delay-2">
+                <div class="icon-wrap"><i class="fa-solid fa-seedling"></i></div>
+                <h3>Plant-Filled Décor</h3>
+                <p>Surrounded by greenery and warm ambient lighting for a photo-friendly aesthetic.</p>
+            </div>
+            <div class="feature-card glass-panel fade-up delay-3">
+                <div class="icon-wrap"><i class="fa-solid fa-people-group"></i></div>
+                <h3>Perfect For...</h3>
+                <p>Casual hangouts, study/work sessions, small gatherings, and relaxed dining.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand fade-up">
+                <h2><i class="fa-solid fa-leaf"></i> The Lazy Leaf</h2>
+                <p>Your sanctuary for vegetarian comfort food, premium coffee, and great conversations.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-contact fade-up delay-1">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> B-257 Commerce College Rd, Sector-B, Talwandi, Kota</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 086191 23182</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@lazyleaf.in</li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours fade-up delay-2" id="order">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li><strong>Daily:</strong> 11:00 AM – 11:00 PM</li>
+                    <li><span class="badge badge-light">Breakfast</span> 8:00 AM – 11:00 AM</li>
+                </ul>
+                <div class="mt-4" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://www.swiggy.com/city/kota/the-lazy-leaf-talwandi-talwandi-rest918061" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-white"><i class="fa-solid fa-motorcycle"></i> Order on Swiggy</a>
+                    <a href="https://www.zomato.com/kota/the-lazy-leaf-talwandi" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-white"><i class="fa-solid fa-motorcycle"></i> Order on Zomato</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Lazy Leaf Café, Kota. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
